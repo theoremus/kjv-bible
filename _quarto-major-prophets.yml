@@ -1,0 +1,12 @@
+project:
+  output-dir: _pdf/major-prophets
+
+book:
+  title: "The Holy Bible: Major Prophets"
+  chapters:
+    - index.qmd
+    - isaiah.qmd
+    - jeremiah.qmd
+    - lamentations.qmd
+    - ezekiel.qmd
+    - daniel.qmd

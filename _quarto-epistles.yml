@@ -1,0 +1,29 @@
+project:
+  output-dir: _pdf/epistles
+
+book:
+  title: "The Holy Bible: Epistles and Revelation"
+  chapters:
+    - index.qmd
+    - romans.qmd
+    - 1-corinthians.qmd
+    - 2-corinthians.qmd
+    - galatians.qmd
+    - ephesians.qmd
+    - philippians.qmd
+    - colossians.qmd
+    - 1-thessalonians.qmd
+    - 2-thessalonians.qmd
+    - 1-timothy.qmd
+    - 2-timothy.qmd
+    - titus.qmd
+    - philemon.qmd
+    - hebrews.qmd
+    - james.qmd
+    - 1-peter.qmd
+    - 2-peter.qmd
+    - 1-john.qmd
+    - 2-john.qmd
+    - 3-john.qmd
+    - jude.qmd
+    - revelation.qmd

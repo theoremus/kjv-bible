@@ -1,0 +1,12 @@
+project:
+  output-dir: _pdf/gospels
+
+book:
+  title: "The Holy Bible: Gospels and Acts"
+  chapters:
+    - index.qmd
+    - matthew.qmd
+    - mark.qmd
+    - luke.qmd
+    - john.qmd
+    - acts.qmd

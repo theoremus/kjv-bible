@@ -1,0 +1,12 @@
+project:
+  output-dir: _pdf/law
+
+book:
+  title: "The Holy Bible: The Law"
+  chapters:
+    - index.qmd
+    - genesis.qmd
+    - exodus.qmd
+    - leviticus.qmd
+    - numbers.qmd
+    - deuteronomy.qmd

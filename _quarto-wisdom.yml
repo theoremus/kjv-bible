@@ -1,0 +1,12 @@
+project:
+  output-dir: _pdf/wisdom
+
+book:
+  title: "The Holy Bible: Poetry and Wisdom"
+  chapters:
+    - index.qmd
+    - job.qmd
+    - psalms.qmd
+    - proverbs.qmd
+    - ecclesiastes.qmd
+    - song-of-solomon.qmd

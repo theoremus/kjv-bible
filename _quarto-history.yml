@@ -1,0 +1,19 @@
+project:
+  output-dir: _pdf/history
+
+book:
+  title: "The Holy Bible: History"
+  chapters:
+    - index.qmd
+    - joshua.qmd
+    - judges.qmd
+    - ruth.qmd
+    - 1-samuel.qmd
+    - 2-samuel.qmd
+    - 1-kings.qmd
+    - 2-kings.qmd
+    - 1-chronicles.qmd
+    - 2-chronicles.qmd
+    - ezra.qmd
+    - nehemiah.qmd
+    - esther.qmd

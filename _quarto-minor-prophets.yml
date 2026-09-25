@@ -1,0 +1,19 @@
+project:
+  output-dir: _pdf/minor-prophets
+
+book:
+  title: "The Holy Bible: Minor Prophets"
+  chapters:
+    - index.qmd
+    - hosea.qmd
+    - joel.qmd
+    - amos.qmd
+    - obadiah.qmd
+    - jonah.qmd
+    - micah.qmd
+    - nahum.qmd
+    - habakkuk.qmd
+    - zephaniah.qmd
+    - haggai.qmd
+    - zechariah.qmd
+    - malachi.qmd

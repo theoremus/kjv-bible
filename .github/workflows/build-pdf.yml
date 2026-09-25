@@ -1,0 +1,147 @@
+name: Build Bible PDF and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-volumes:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - volume: law
+            profile: law
+          - volume: history
+            profile: history
+          - volume: wisdom
+            profile: wisdom
+          - volume: major-prophets
+            profile: major-prophets
+          - volume: minor-prophets
+            profile: minor-prophets
+          - volume: gospels
+            profile: gospels
+          - volume: epistles
+            profile: epistles
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install TinyTeX
+        run: quarto install tinytex --no-prompt
+
+      - name: Render PDF volume
+        run: quarto render --profile ${{ matrix.profile }} --to pdf
+
+      - name: Name PDF volume
+        run: |
+          pdf_file="$(find "_pdf/${{ matrix.volume }}" -type f -name '*.pdf' -print -quit)"
+          test -n "$pdf_file"
+          cp "$pdf_file" "_pdf/${{ matrix.volume }}.pdf"
+
+      - name: Upload PDF volume
+        uses: actions/upload-artifact@v4
+        with:
+          name: bible-pdf-${{ matrix.volume }}
+          path: _pdf/${{ matrix.volume }}.pdf
+          if-no-files-found: error
+          retention-days: 30
+
+  combine-pdfs:
+    needs: build-volumes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download PDF volumes
+        uses: actions/download-artifact@v4
+        with:
+          pattern: bible-pdf-*
+          path: pdf-parts
+          merge-multiple: true
+
+      - name: Install qpdf
+        run: sudo apt-get update && sudo apt-get install --yes qpdf
+
+      - name: Combine into one PDF
+        run: |
+          qpdf --empty --pages \
+            pdf-parts/law.pdf \
+            pdf-parts/history.pdf \
+            pdf-parts/wisdom.pdf \
+            pdf-parts/major-prophets.pdf \
+            pdf-parts/minor-prophets.pdf \
+            pdf-parts/gospels.pdf \
+            pdf-parts/epistles.pdf \
+            -- The-Holy-Bible.pdf
+
+      - name: Upload combined PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: The-Holy-Bible
+          path: The-Holy-Bible.pdf
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Publish latest PDF release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: pdf-latest
+          name: Latest Bible PDF
+          body: Combined PDF generated from the main branch.
+          files: The-Holy-Bible.pdf
+          overwrite_files: true
+          make_latest: false
+
+  deploy-site:
+    needs: combine-pdfs
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Download combined PDF
+        uses: actions/download-artifact@v4
+        with:
+          name: The-Holy-Bible
+          path: pdf-artifact
+
+      - name: Render HTML book
+        run: quarto render --profile html --to html
+
+      - name: Add PDF to Pages site
+        run: cp pdf-artifact/The-Holy-Bible.pdf _site/The-Holy-Bible.pdf
+
+      - name: Disable Jekyll processing
+        run: touch _site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
