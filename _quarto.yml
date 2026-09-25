@@ -1,8 +1,11 @@
 project:
   type: book
+  output-dir: _site
 
 book:
   title: "The Holy Bible"
+  site-url: https://theoremus.github.io/kjv-bible/
+  downloads: [pdf]
   chapters:
     - index.qmd
     - genesis.qmd
