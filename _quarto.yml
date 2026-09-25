@@ -1,0 +1,103 @@
+project:
+  type: book
+
+book:
+  title: "The Holy Bible"
+  chapters:
+    - index.qmd
+    - genesis.qmd
+    - exodus.qmd
+    - leviticus.qmd
+    - numbers.qmd
+    - deuteronomy.qmd
+    - joshua.qmd
+    - judges.qmd
+    - ruth.qmd
+    - 1-samuel.qmd
+    - 2-samuel.qmd
+    - 1-kings.qmd
+    - 2-kings.qmd
+    - 1-chronicles.qmd
+    - 2-chronicles.qmd
+    - ezra.qmd
+    - nehemiah.qmd
+    - esther.qmd
+    - job.qmd
+    - psalms.qmd
+    - proverbs.qmd
+    - ecclesiastes.qmd
+    - song-of-solomon.qmd
+    - isaiah.qmd
+    - jeremiah.qmd
+    - lamentations.qmd
+    - ezekiel.qmd
+    - daniel.qmd
+    - hosea.qmd
+    - joel.qmd
+    - amos.qmd
+    - obadiah.qmd
+    - jonah.qmd
+    - micah.qmd
+    - nahum.qmd
+    - habakkuk.qmd
+    - zephaniah.qmd
+    - haggai.qmd
+    - zechariah.qmd
+    - malachi.qmd
+    - matthew.qmd
+    - mark.qmd
+    - luke.qmd
+    - john.qmd
+    - acts.qmd
+    - romans.qmd
+    - 1-corinthians.qmd
+    - 2-corinthians.qmd
+    - galatians.qmd
+    - ephesians.qmd
+    - philippians.qmd
+    - colossians.qmd
+    - 1-thessalonians.qmd
+    - 2-thessalonians.qmd
+    - 1-timothy.qmd
+    - 2-timothy.qmd
+    - titus.qmd
+    - philemon.qmd
+    - hebrews.qmd
+    - james.qmd
+    - 1-peter.qmd
+    - 2-peter.qmd
+    - 1-john.qmd
+    - 2-john.qmd
+    - 3-john.qmd
+    - jude.qmd
+    - revelation.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+  pdf:
+    documentclass: memoir
+    classoption: [twoside, openany]
+    geometry: [a5paper, margin=1in]
+    mainfont: "EB Garamond"
+    include-in-header:
+      text: |
+        \usepackage{lettrine} % For drop caps
+        \usepackage{scripture} % For scripture formatting
+        \usepackage{xcolor} % Optional: for colored drop caps
+        \setlength{\columnsep}{0.25in}
+        \scripturesetup{
+          verse/format = {\bfseries\textsuperscript{#1}}, % Ensure braces wrap the whole thing
+          verse/sep = 0.1em
+        }
+        \input{Zallman.fd}
+        \newcommand*{\initfamily}{\usefont{U}{Zallman}{xl}{n}}
+        \renewcommand{\LettrineFontHook}{\initfamily}
+        \setlength{\DefaultNindent}{1em}
+        
+
+
+

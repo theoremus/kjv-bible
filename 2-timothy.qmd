@@ -1,0 +1,140 @@
+# 2 Timothy {.unnumbered}
+
+##### Chapter 1
+
+::: {.content-visible when-format="html"}
+<div class="scripture" data-book="2 Timothy" data-chapter="1">
+<p><span class="drop-cap">P</span>aul, an apostle of Jesus Christ by the will of God, according to the promise of life which is in Christ Jesus, <span class="verse-number">2</span> To Timothy, my dearly beloved son: Grace, mercy, and peace, from God the Father and Christ Jesus our Lord. <span class="verse-number">3</span> I thank God, whom I serve from my forefathers with pure conscience, that without ceasing I have remembrance of thee in my prayers night and day; <span class="verse-number">4</span> Greatly desiring to see thee, being mindful of thy tears, that I may be filled with joy; <span class="verse-number">5</span> When I call to remembrance the unfeigned faith that is in thee, which dwelt first in thy grandmother Lois, and thy mother Eunice; and I am persuaded that in thee also. <span class="verse-number">6</span> Wherefore I put thee in remembrance that thou stir up the gift of God, which is in thee by the putting on of my hands. <span class="verse-number">7</span> For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind. <span class="verse-number">8</span> Be not thou therefore ashamed of the testimony of our Lord, nor of me his prisoner: but be thou partaker of the afflictions of the gospel according to the power of God; <span class="verse-number">9</span> Who hath saved us, and called us with an holy calling, not according to our works, but according to his own purpose and grace, which was given us in Christ Jesus before the world began, <span class="verse-number">10</span> But is now made manifest by the appearing of our Saviour Jesus Christ, who hath abolished death, and hath brought life and immortality to light through the gospel: <span class="verse-number">11</span> Whereunto I am appointed a preacher, and an apostle, and a teacher of the Gentiles. <span class="verse-number">12</span> For the which cause I also suffer these things: nevertheless I am not ashamed: for I know whom I have believed, and am persuaded that he is able to keep that which I have committed unto him against that day. <span class="verse-number">13</span> Hold fast the form of sound words, which thou hast heard of me, in faith and love which is in Christ Jesus. <span class="verse-number">14</span> That good thing which was committed unto thee keep by the Holy Ghost which dwelleth in us. <span class="verse-number">15</span> This thou knowest, that all they which are in Asia be turned away from me; of whom are Phygellus and Hermogenes. <span class="verse-number">16</span> The Lord give mercy unto the house of Onesiphorus; for he oft refreshed me, and was not ashamed of my chain: <span class="verse-number">17</span> But, when he was in Rome, he sought me out very diligently, and found me. <span class="verse-number">18</span> The Lord grant unto him that he may find mercy of the Lord in that day: and in how many things he ministered unto me at Ephesus, thou knowest very well.</p>
+</div>
+:::
+
+::: {.content-visible when-format="pdf"}
+\begin{scripture}[2 Timothy][1]
+\lettrine[lines=4]{P}{aul,} an apostle of Jesus Christ by the will of God, according to the promise of life which is in Christ Jesus,
+\vs{2}To Timothy, my dearly beloved son: Grace, mercy, and peace, from God the Father and Christ Jesus our Lord.
+\vs{3}I thank God, whom I serve from my forefathers with pure conscience, that without ceasing I have remembrance of thee in my prayers night and day;
+\vs{4}Greatly desiring to see thee, being mindful of thy tears, that I may be filled with joy;
+\vs{5}When I call to remembrance the unfeigned faith that is in thee, which dwelt first in thy grandmother Lois, and thy mother Eunice; and I am persuaded that in thee also.
+\vs{6}Wherefore I put thee in remembrance that thou stir up the gift of God, which is in thee by the putting on of my hands.
+\vs{7}For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.
+\vs{8}Be not thou therefore ashamed of the testimony of our Lord, nor of me his prisoner: but be thou partaker of the afflictions of the gospel according to the power of God;
+\vs{9}Who hath saved us, and called us with an holy calling, not according to our works, but according to his own purpose and grace, which was given us in Christ Jesus before the world began,
+\vs{10}But is now made manifest by the appearing of our Saviour Jesus Christ, who hath abolished death, and hath brought life and immortality to light through the gospel:
+\vs{11}Whereunto I am appointed a preacher, and an apostle, and a teacher of the Gentiles.
+\vs{12}For the which cause I also suffer these things: nevertheless I am not ashamed: for I know whom I have believed, and am persuaded that he is able to keep that which I have committed unto him against that day.
+\vs{13}Hold fast the form of sound words, which thou hast heard of me, in faith and love which is in Christ Jesus.
+\vs{14}That good thing which was committed unto thee keep by the Holy Ghost which dwelleth in us.
+\vs{15}This thou knowest, that all they which are in Asia be turned away from me; of whom are Phygellus and Hermogenes.
+\vs{16}The Lord give mercy unto the house of Onesiphorus; for he oft refreshed me, and was not ashamed of my chain:
+\vs{17}But, when he was in Rome, he sought me out very diligently, and found me.
+\vs{18}The Lord grant unto him that he may find mercy of the Lord in that day: and in how many things he ministered unto me at Ephesus, thou knowest very well.
+\end{scripture}
+:::
+
+
+##### Chapter 2
+
+::: {.content-visible when-format="html"}
+<div class="scripture" data-book="2 Timothy" data-chapter="2">
+<p><span class="drop-cap">T</span>hou therefore, my son, be strong in the grace that is in Christ Jesus. <span class="verse-number">2</span> And the things that thou hast heard of me among many witnesses, the same commit thou to faithful men, who shall be able to teach others also. <span class="verse-number">3</span> Thou therefore endure hardness, as a good soldier of Jesus Christ. <span class="verse-number">4</span> No man that warreth entangleth himself with the affairs of this life; that he may please him who hath chosen him to be a soldier. <span class="verse-number">5</span> And if a man also strive for masteries, yet is he not crowned, except he strive lawfully. <span class="verse-number">6</span> The husbandman that laboureth must be first partaker of the fruits. <span class="verse-number">7</span> Consider what I say; and the Lord give thee understanding in all things. <span class="verse-number">8</span> Remember that Jesus Christ of the seed of David was raised from the dead according to my gospel: <span class="verse-number">9</span> Wherein I suffer trouble, as an evil doer, even unto bonds; but the word of God is not bound. <span class="verse-number">10</span> Therefore I endure all things for the elect's sakes, that they may also obtain the salvation which is in Christ Jesus with eternal glory. <span class="verse-number">11</span> It is a faithful saying: For if we be dead with him, we shall also live with him: <span class="verse-number">12</span> If we suffer, we shall also reign with him: if we deny him, he also will deny us: <span class="verse-number">13</span> If we believe not, yet he abideth faithful: he cannot deny himself. <span class="verse-number">14</span> Of these things put them in remembrance, charging them before the Lord that they strive not about words to no profit, but to the subverting of the hearers. <span class="verse-number">15</span> Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. <span class="verse-number">16</span> But shun profane and vain babblings: for they will increase unto more ungodliness. <span class="verse-number">17</span> And their word will eat as doth a canker: of whom is Hymenaeus and Philetus; <span class="verse-number">18</span> Who concerning the truth have erred, saying that the resurrection is past already; and overthrow the faith of some. <span class="verse-number">19</span> Nevertheless the foundation of God standeth sure, having this seal, The Lord knoweth them that are his. And, Let every one that nameth the name of Christ depart from iniquity. <span class="verse-number">20</span> But in a great house there are not only vessels of gold and of silver, but also of wood and of earth; and some to honour, and some to dishonour. <span class="verse-number">21</span> If a man therefore purge himself from these, he shall be a vessel unto honour, sanctified, and meet for the master's use, and prepared unto every good work. <span class="verse-number">22</span> Flee also youthful lusts: but follow righteousness, faith, charity, peace, with them that call on the Lord out of a pure heart. <span class="verse-number">23</span> But foolish and unlearned questions avoid, knowing that they do gender strifes. <span class="verse-number">24</span> And the servant of the Lord must not strive; but be gentle unto all men, apt to teach, patient, <span class="verse-number">25</span> In meekness instructing those that oppose themselves; if God peradventure will give them repentance to the acknowledging of the truth; <span class="verse-number">26</span> And that they may recover themselves out of the snare of the devil, who are taken captive by him at his will.</p>
+</div>
+:::
+
+::: {.content-visible when-format="pdf"}
+\begin{scripture}[2 Timothy][2]
+\lettrine[lines=4]{T}{hou} therefore, my son, be strong in the grace that is in Christ Jesus.
+\vs{2}And the things that thou hast heard of me among many witnesses, the same commit thou to faithful men, who shall be able to teach others also.
+\vs{3}Thou therefore endure hardness, as a good soldier of Jesus Christ.
+\vs{4}No man that warreth entangleth himself with the affairs of this life; that he may please him who hath chosen him to be a soldier.
+\vs{5}And if a man also strive for masteries, yet is he not crowned, except he strive lawfully.
+\vs{6}The husbandman that laboureth must be first partaker of the fruits.
+\vs{7}Consider what I say; and the Lord give thee understanding in all things.
+\vs{8}Remember that Jesus Christ of the seed of David was raised from the dead according to my gospel:
+\vs{9}Wherein I suffer trouble, as an evil doer, even unto bonds; but the word of God is not bound.
+\vs{10}Therefore I endure all things for the elect's sakes, that they may also obtain the salvation which is in Christ Jesus with eternal glory.
+\vs{11}It is a faithful saying: For if we be dead with him, we shall also live with him:
+\vs{12}If we suffer, we shall also reign with him: if we deny him, he also will deny us:
+\vs{13}If we believe not, yet he abideth faithful: he cannot deny himself.
+\vs{14}Of these things put them in remembrance, charging them before the Lord that they strive not about words to no profit, but to the subverting of the hearers.
+\vs{15}Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth.
+\vs{16}But shun profane and vain babblings: for they will increase unto more ungodliness.
+\vs{17}And their word will eat as doth a canker: of whom is Hymenaeus and Philetus;
+\vs{18}Who concerning the truth have erred, saying that the resurrection is past already; and overthrow the faith of some.
+\vs{19}Nevertheless the foundation of God standeth sure, having this seal, The Lord knoweth them that are his. And, Let every one that nameth the name of Christ depart from iniquity.
+\vs{20}But in a great house there are not only vessels of gold and of silver, but also of wood and of earth; and some to honour, and some to dishonour.
+\vs{21}If a man therefore purge himself from these, he shall be a vessel unto honour, sanctified, and meet for the master's use, and prepared unto every good work.
+\vs{22}Flee also youthful lusts: but follow righteousness, faith, charity, peace, with them that call on the Lord out of a pure heart.
+\vs{23}But foolish and unlearned questions avoid, knowing that they do gender strifes.
+\vs{24}And the servant of the Lord must not strive; but be gentle unto all men, apt to teach, patient,
+\vs{25}In meekness instructing those that oppose themselves; if God peradventure will give them repentance to the acknowledging of the truth;
+\vs{26}And that they may recover themselves out of the snare of the devil, who are taken captive by him at his will.
+\end{scripture}
+:::
+
+
+##### Chapter 3
+
+::: {.content-visible when-format="html"}
+<div class="scripture" data-book="2 Timothy" data-chapter="3">
+<p><span class="drop-cap">T</span>his know also, that in the last days perilous times shall come. <span class="verse-number">2</span> For men shall be lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy, <span class="verse-number">3</span> Without natural affection, trucebreakers, false accusers, incontinent, fierce, despisers of those that are good, <span class="verse-number">4</span> Traitors, heady, highminded, lovers of pleasures more than lovers of God; <span class="verse-number">5</span> Having a form of godliness, but denying the power thereof: from such turn away. <span class="verse-number">6</span> For of this sort are they which creep into houses, and lead captive silly women laden with sins, led away with divers lusts, <span class="verse-number">7</span> Ever learning, and never able to come to the knowledge of the truth. <span class="verse-number">8</span> Now as Jannes and Jambres withstood Moses, so do these also resist the truth: men of corrupt minds, reprobate concerning the faith. <span class="verse-number">9</span> But they shall proceed no further: for their folly shall be manifest unto all men, as their's also was. <span class="verse-number">10</span> But thou hast fully known my doctrine, manner of life, purpose, faith, longsuffering, charity, patience, <span class="verse-number">11</span> Persecutions, afflictions, which came unto me at Antioch, at Iconium, at Lystra; what persecutions I endured: but out of them all the Lord delivered me. <span class="verse-number">12</span> Yea, and all that will live godly in Christ Jesus shall suffer persecution. <span class="verse-number">13</span> But evil men and seducers shall wax worse and worse, deceiving, and being deceived. <span class="verse-number">14</span> But continue thou in the things which thou hast learned and hast been assured of, knowing of whom thou hast learned them; <span class="verse-number">15</span> And that from a child thou hast known the holy scriptures, which are able to make thee wise unto salvation through faith which is in Christ Jesus. <span class="verse-number">16</span> All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: <span class="verse-number">17</span> That the man of God may be perfect, throughly furnished unto all good works.</p>
+</div>
+:::
+
+::: {.content-visible when-format="pdf"}
+\begin{scripture}[2 Timothy][3]
+\lettrine[lines=4]{T}{his} know also, that in the last days perilous times shall come.
+\vs{2}For men shall be lovers of their own selves, covetous, boasters, proud, blasphemers, disobedient to parents, unthankful, unholy,
+\vs{3}Without natural affection, trucebreakers, false accusers, incontinent, fierce, despisers of those that are good,
+\vs{4}Traitors, heady, highminded, lovers of pleasures more than lovers of God;
+\vs{5}Having a form of godliness, but denying the power thereof: from such turn away.
+\vs{6}For of this sort are they which creep into houses, and lead captive silly women laden with sins, led away with divers lusts,
+\vs{7}Ever learning, and never able to come to the knowledge of the truth.
+\vs{8}Now as Jannes and Jambres withstood Moses, so do these also resist the truth: men of corrupt minds, reprobate concerning the faith.
+\vs{9}But they shall proceed no further: for their folly shall be manifest unto all men, as their's also was.
+\vs{10}But thou hast fully known my doctrine, manner of life, purpose, faith, longsuffering, charity, patience,
+\vs{11}Persecutions, afflictions, which came unto me at Antioch, at Iconium, at Lystra; what persecutions I endured: but out of them all the Lord delivered me.
+\vs{12}Yea, and all that will live godly in Christ Jesus shall suffer persecution.
+\vs{13}But evil men and seducers shall wax worse and worse, deceiving, and being deceived.
+\vs{14}But continue thou in the things which thou hast learned and hast been assured of, knowing of whom thou hast learned them;
+\vs{15}And that from a child thou hast known the holy scriptures, which are able to make thee wise unto salvation through faith which is in Christ Jesus.
+\vs{16}All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:
+\vs{17}That the man of God may be perfect, throughly furnished unto all good works.
+\end{scripture}
+:::
+
+
+##### Chapter 4
+
+::: {.content-visible when-format="html"}
+<div class="scripture" data-book="2 Timothy" data-chapter="4">
+<p><span class="drop-cap">I</span> charge thee therefore before God, and the Lord Jesus Christ, who shall judge the quick and the dead at his appearing and his kingdom; <span class="verse-number">2</span> Preach the word; be instant in season, out of season; reprove, rebuke, exhort with all longsuffering and doctrine. <span class="verse-number">3</span> For the time will come when they will not endure sound doctrine; but after their own lusts shall they heap to themselves teachers, having itching ears; <span class="verse-number">4</span> And they shall turn away their ears from the truth, and shall be turned unto fables. <span class="verse-number">5</span> But watch thou in all things, endure afflictions, do the work of an evangelist, make full proof of thy ministry. <span class="verse-number">6</span> For I am now ready to be offered, and the time of my departure is at hand. <span class="verse-number">7</span> I have fought a good fight, I have finished my course, I have kept the faith: <span class="verse-number">8</span> Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous judge, shall give me at that day: and not to me only, but unto all them also that love his appearing. <span class="verse-number">9</span> Do thy diligence to come shortly unto me: <span class="verse-number">10</span> For Demas hath forsaken me, having loved this present world, and is departed unto Thessalonica; Crescens to Galatia, Titus unto Dalmatia. <span class="verse-number">11</span> Only Luke is with me. Take Mark, and bring him with thee: for he is profitable to me for the ministry. <span class="verse-number">12</span> And Tychicus have I sent to Ephesus. <span class="verse-number">13</span> The cloke that I left at Troas with Carpus, when thou comest, bring with thee, and the books, but especially the parchments. <span class="verse-number">14</span> Alexander the coppersmith did me much evil: the Lord reward him according to his works: <span class="verse-number">15</span> Of whom be thou ware also; for he hath greatly withstood our words. <span class="verse-number">16</span> At my first answer no man stood with me, but all men forsook me: I pray God that it may not be laid to their charge. <span class="verse-number">17</span> Notwithstanding the Lord stood with me, and strengthened me; that by me the preaching might be fully known, and that all the Gentiles might hear: and I was delivered out of the mouth of the lion. <span class="verse-number">18</span> And the Lord shall deliver me from every evil work, and will preserve me unto his heavenly kingdom: to whom be glory for ever and ever. Amen. <span class="verse-number">19</span> Salute Prisca and Aquila, and the household of Onesiphorus. <span class="verse-number">20</span> Erastus abode at Corinth: but Trophimus have I left at Miletum sick. <span class="verse-number">21</span> Do thy diligence to come before winter. Eubulus greeteth thee, and Pudens, and Linus, and Claudia, and all the brethren. <span class="verse-number">22</span> The Lord Jesus Christ be with thy spirit. Grace be with you. Amen.</p>
+</div>
+:::
+
+::: {.content-visible when-format="pdf"}
+\begin{scripture}[2 Timothy][4]
+\lettrine[lines=4]{I}{} charge thee therefore before God, and the Lord Jesus Christ, who shall judge the quick and the dead at his appearing and his kingdom;
+\vs{2}Preach the word; be instant in season, out of season; reprove, rebuke, exhort with all longsuffering and doctrine.
+\vs{3}For the time will come when they will not endure sound doctrine; but after their own lusts shall they heap to themselves teachers, having itching ears;
+\vs{4}And they shall turn away their ears from the truth, and shall be turned unto fables.
+\vs{5}But watch thou in all things, endure afflictions, do the work of an evangelist, make full proof of thy ministry.
+\vs{6}For I am now ready to be offered, and the time of my departure is at hand.
+\vs{7}I have fought a good fight, I have finished my course, I have kept the faith:
+\vs{8}Henceforth there is laid up for me a crown of righteousness, which the Lord, the righteous judge, shall give me at that day: and not to me only, but unto all them also that love his appearing.
+\vs{9}Do thy diligence to come shortly unto me:
+\vs{10}For Demas hath forsaken me, having loved this present world, and is departed unto Thessalonica; Crescens to Galatia, Titus unto Dalmatia.
+\vs{11}Only Luke is with me. Take Mark, and bring him with thee: for he is profitable to me for the ministry.
+\vs{12}And Tychicus have I sent to Ephesus.
+\vs{13}The cloke that I left at Troas with Carpus, when thou comest, bring with thee, and the books, but especially the parchments.
+\vs{14}Alexander the coppersmith did me much evil: the Lord reward him according to his works:
+\vs{15}Of whom be thou ware also; for he hath greatly withstood our words.
+\vs{16}At my first answer no man stood with me, but all men forsook me: I pray God that it may not be laid to their charge.
+\vs{17}Notwithstanding the Lord stood with me, and strengthened me; that by me the preaching might be fully known, and that all the Gentiles might hear: and I was delivered out of the mouth of the lion.
+\vs{18}And the Lord shall deliver me from every evil work, and will preserve me unto his heavenly kingdom: to whom be glory for ever and ever. Amen.
+\vs{19}Salute Prisca and Aquila, and the household of Onesiphorus.
+\vs{20}Erastus abode at Corinth: but Trophimus have I left at Miletum sick.
+\vs{21}Do thy diligence to come before winter. Eubulus greeteth thee, and Pudens, and Linus, and Claudia, and all the brethren.
+\vs{22}The Lord Jesus Christ be with thy spirit. Grace be with you. Amen.
+\end{scripture}
+:::
+
