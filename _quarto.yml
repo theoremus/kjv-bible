@@ -23,21 +23,12 @@ format:
     classoption: [twoside, openany]
     geometry: [a5paper, margin=1in]
     mainfont: "EB Garamond"
+    filters:
+      - scripture-reference.lua
     include-in-header:
       text: |
         \usepackage{lettrine} % For drop caps
         \usepackage{scripture} % For scripture formatting
-        % Legacy content uses \begin{scripture}[Book][Chapter]; newer scripture
-        % versions accept one reference argument followed by key-value options.
-        \let\legacyScripture\scripture
-        \let\endlegacyScripture\endscripture
-        \RenewDocumentEnvironment{scripture}{O{} O{}}{%
-          \if\relax\detokenize{#2}\relax
-            \legacyScripture[#1]%
-          \else
-            \legacyScripture[#1\space #2]%
-          \fi
-        }{\endlegacyScripture}
         \usepackage{xcolor} % Optional: for colored drop caps
         \setlength{\columnsep}{0.25in}
         \scripturesetup{
