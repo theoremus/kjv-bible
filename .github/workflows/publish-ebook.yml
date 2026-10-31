@@ -60,9 +60,9 @@ jobs:
           ]
           assert all((site / f"{book}.html").is_file() for book in books), "A book HTML page is missing"
           assert all((site / "ebooks" / f"{book}.epub").is_file() for book in books), "A book EPUB is missing"
-            whole_bible = site / "ebooks" / "The-Holy-Bible.epub"
-            assert whole_bible.is_file(), "The complete Bible EPUB is missing"
-            with ZipFile(whole_bible) as ebook:
+          whole_bible = site / "ebooks" / "The-Holy-Bible.epub"
+          assert whole_bible.is_file(), "The complete Bible EPUB is missing"
+          with ZipFile(whole_bible) as ebook:
               assert ebook.testzip() is None, "The complete Bible EPUB archive is corrupt"
               assert ebook.read("mimetype") == b"application/epub+zip", "The EPUB mimetype is invalid"
           assert (site / "images.html").is_file(), "The illustration index is missing"
@@ -73,7 +73,7 @@ jobs:
           locations = {entry.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text for entry in sitemap}
           assert "https://theoremus.github.io/kjv-bible/" in locations, "Homepage canonical URL is missing from sitemap"
           assert "https://theoremus.github.io/kjv-bible/index.html" not in locations, "Sitemap should use the root homepage URL"
-            print("Verified 66 book EPUBs, the complete Bible EPUB, and the HTML illustration index.")
+          print("Verified 66 book EPUBs, the complete Bible EPUB, and the HTML illustration index.")
           print("Verified crawler access and sitemap URLs for all 68 public HTML pages.")
           PY
 
