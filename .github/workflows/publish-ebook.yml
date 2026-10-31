@@ -1,0 +1,93 @@
+name: Build ebook and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy-site:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Render interactive HTML reader
+        run: quarto render --profile html --to html
+
+      - name: Build illustrated book EPUBs and complete Bible EPUB
+        run: python scripts/build_ebooks.py
+
+      - name: Verify Pages and ebook outputs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          from zipfile import ZipFile
+
+          site = Path("_site")
+          books = [
+              "genesis", "exodus", "leviticus", "numbers", "deuteronomy", "joshua", "judges",
+              "ruth", "1-samuel", "2-samuel", "1-kings", "2-kings", "1-chronicles",
+              "2-chronicles", "ezra", "nehemiah", "esther", "job", "psalms", "proverbs",
+              "ecclesiastes", "song-of-solomon", "isaiah", "jeremiah", "lamentations",
+              "ezekiel", "daniel", "hosea", "joel", "amos", "obadiah", "jonah", "micah",
+              "nahum", "habakkuk", "zephaniah", "haggai", "zechariah", "malachi", "matthew",
+              "mark", "luke", "john", "acts", "romans", "1-corinthians", "2-corinthians",
+              "galatians", "ephesians", "philippians", "colossians", "1-thessalonians",
+              "2-thessalonians", "1-timothy", "2-timothy", "titus", "philemon", "hebrews",
+              "james", "1-peter", "2-peter", "1-john", "2-john", "3-john", "jude", "revelation",
+          ]
+          assert all((site / f"{book}.html").is_file() for book in books), "A book HTML page is missing"
+          assert all((site / "ebooks" / f"{book}.epub").is_file() for book in books), "A book EPUB is missing"
+            whole_bible = site / "ebooks" / "The-Holy-Bible.epub"
+            assert whole_bible.is_file(), "The complete Bible EPUB is missing"
+            with ZipFile(whole_bible) as ebook:
+              assert ebook.testzip() is None, "The complete Bible EPUB archive is corrupt"
+              assert ebook.read("mimetype") == b"application/epub+zip", "The EPUB mimetype is invalid"
+          assert (site / "images.html").is_file(), "The illustration index is missing"
+          assert (site / "robots.txt").is_file(), "robots.txt is missing"
+          assert (site / "sitemap.xml").is_file(), "The search-engine sitemap is missing"
+          sitemap = ET.parse(site / "sitemap.xml").getroot()
+          assert len(sitemap) == 68, "The sitemap should list the homepage, all books, and image index"
+          locations = {entry.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text for entry in sitemap}
+          assert "https://theoremus.github.io/kjv-bible/" in locations, "Homepage canonical URL is missing from sitemap"
+          assert "https://theoremus.github.io/kjv-bible/index.html" not in locations, "Sitemap should use the root homepage URL"
+            print("Verified 66 book EPUBs, the complete Bible EPUB, and the HTML illustration index.")
+          print("Verified crawler access and sitemap URLs for all 68 public HTML pages.")
+          PY
+
+      - name: Disable Jekyll processing
+        run: touch _site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

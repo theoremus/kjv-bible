@@ -67,3 +67,9 @@ book:
     - 3-john.qmd
     - jude.qmd
     - revelation.qmd
+
+format:
+  html:
+    toc: true
+    search: true
+    page-navigation: true

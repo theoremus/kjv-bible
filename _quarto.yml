@@ -1,16 +1,16 @@
 project:
   type: book
   output-dir: _site
-
-profile:
-  group:
-    - [html, law, history, wisdom, major-prophets, minor-prophets, gospels, epistles]
+  resources:
+    - reader-images/*.jpg
+    - reader-images/illustrations.json
+    - cover-vector.svg
 
 book:
   title: "The Holy Bible"
   site-url: https://theoremus.github.io/kjv-bible/
   output-file: The-Holy-Bible
-  downloads: [pdf]
+  description: "Read the complete King James Version of the Holy Bible, browse all 66 books, and download the complete EPUB or individual books free."
 
 format:
   html:
@@ -18,28 +18,9 @@ format:
       - cosmo
       - brand
     css: styles.css
-  pdf:
-    documentclass: memoir
-    classoption: [twoside, openany]
-    geometry: [a5paper, margin=1in]
-    mainfont: "EB Garamond"
-    filters:
-      - scripture-reference.lua
-    include-in-header:
-      text: |
-        \usepackage{lettrine} % For drop caps
-        \usepackage{scripture} % For scripture formatting
-        \usepackage{xcolor} % Optional: for colored drop caps
-        \setlength{\columnsep}{0.25in}
-        \scripturesetup{
-          verse/format = {\bfseries\textsuperscript{#1}}, % Ensure braces wrap the whole thing
-          verse/sep = 0.1em
-        }
-        \input{Zallman.fd}
-        \newcommand*{\initfamily}{\usefont{U}{Zallman}{xl}{n}}
-        \renewcommand{\LettrineFontHook}{\initfamily}
-        \setlength{\DefaultNindent}{1em}
-        
+    include-after-body: reader.html
+
+
 
 
 
