@@ -105,6 +105,7 @@
       <button type="button" data-action="font-up" aria-label="Increase font size" title="Increase font size">A+</button>
       <button type="button" data-action="theme" aria-pressed="false">Dark mode</button>
       <button type="button" data-action="toc" aria-pressed="false">Table of contents</button>
+      <button type="button" data-action="reader-toolbar" aria-pressed="false">Hide reader controls</button>
       <button type="button" data-action="highlight" title="Select text first">Highlight selection</button>
       <button type="button" data-action="remove-highlight" title="Select any part of a highlighted passage">Remove highlight</button>
       <a class="reader-image-index-link" href="images.html">Image index</a>
@@ -149,7 +150,26 @@
       ebookLink.setAttribute("aria-label", "Download the complete King James Bible as EPUB");
     }
 
-    const settings = read(KEYS.settings, { fontSize: 1.12, theme: "light", tocHidden: false });
+    const settings = read(KEYS.settings, { fontSize: 1.12, theme: "light", tocHidden: false, toolbarHidden: false });
+    const toolbarRestore = document.createElement("button");
+    toolbarRestore.className = "reader-toolbar-restore";
+    toolbarRestore.type = "button";
+    toolbarRestore.textContent = "Show reader controls";
+    toolbarRestore.setAttribute("aria-label", "Show reader controls");
+    toolbarRestore.hidden = true;
+    document.body.append(toolbarRestore);
+
+    const setToolbarHidden = (hidden) => {
+      settings.toolbarHidden = hidden;
+      document.documentElement.classList.toggle("reader-toolbar-hidden", hidden);
+      toolbarRestore.hidden = !hidden;
+      const toggle = toolbar.querySelector('[data-action="reader-toolbar"]');
+      toggle.textContent = hidden ? "Hide controls" : "Hide reader controls";
+      toggle.setAttribute("aria-pressed", String(hidden));
+      write(KEYS.settings, settings);
+    };
+    toolbarRestore.addEventListener("click", () => setToolbarHidden(false));
+
     const setFontSize = (value) => {
       settings.fontSize = Math.max(0.9, Math.min(1.8, value));
       document.documentElement.style.setProperty("--reader-font-size", `${settings.fontSize}rem`);
@@ -158,6 +178,7 @@
     setFontSize(Number(settings.fontSize) || 1.12);
     document.documentElement.dataset.readerTheme = settings.theme === "dark" ? "dark" : "light";
     document.documentElement.classList.toggle("reader-toc-hidden", Boolean(settings.tocHidden));
+    setToolbarHidden(Boolean(settings.toolbarHidden));
     toolbar.querySelector('[data-action="theme"]').textContent = settings.theme === "dark" ? "Light mode" : "Dark mode";
     toolbar.querySelector('[data-action="theme"]').setAttribute("aria-pressed", String(settings.theme === "dark"));
     toolbar.querySelector('[data-action="toc"]').setAttribute("aria-pressed", String(settings.tocHidden));
@@ -226,6 +247,8 @@
         document.documentElement.classList.toggle("reader-toc-hidden", settings.tocHidden);
         button.setAttribute("aria-pressed", String(settings.tocHidden));
         write(KEYS.settings, settings);
+      } else if (action === "reader-toolbar") {
+        setToolbarHidden(true);
       } else if (action === "highlight") {
         const selection = window.getSelection();
         if (!selection || selection.isCollapsed || !selection.rangeCount) {

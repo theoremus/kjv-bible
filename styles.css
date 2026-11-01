@@ -42,6 +42,40 @@
     backdrop-filter: blur(12px);
 }
 
+.reader-toolbar-hidden .reader-toolbar {
+    display: none !important;
+}
+
+.reader-toolbar-restore {
+    position: fixed;
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    z-index: 1100;
+    min-height: 2.75rem;
+    padding: 0.55rem 1rem;
+    border: 1px solid #79592f;
+    border-radius: 999px;
+    color: #fff;
+    background: #79592f;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 24%);
+    font: inherit;
+    cursor: pointer;
+}
+
+.reader-toolbar-restore:hover,
+.reader-toolbar-restore:focus-visible {
+    background: #5e4322;
+}
+
+.reader-toolbar-restore:focus-visible {
+    outline: 3px solid #b8894b;
+    outline-offset: 3px;
+}
+
+.reader-toolbar-restore[hidden] {
+    display: none !important;
+}
+
 .reader-toolbar button,
 .reader-toolbar a {
     min-height: 2.25rem;
@@ -216,6 +250,10 @@ html[data-reader-theme="dark"] .reader-highlight {
 }
 
 .reader-toc-hidden #quarto-margin-sidebar {
+    display: none !important;
+}
+
+.reader-header-hidden #quarto-header {
     display: none !important;
 }
 
